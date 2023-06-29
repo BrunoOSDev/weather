@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white;
+    --main-box-color: rgba(0, 0, 0, 0.6);
+    --main-box-color-hover: rgba(0, 0, 0, 0.8);
+    --input-color: rgba(124, 124, 124, 0.2);
+    --button-search-color: rgba(124, 124, 124, 0.2);
+    --input-color-hover: rgba(124, 124, 124, 0.4);
+    --button-search-color-hover: rgba(124, 124, 124, 0.4);
+  }
+  
+  .light {
+    --text-color: black;
+    --main-box-color: rgba(255, 255, 255, 0.4);
+    --main-box-color-hover: rgba(255, 255, 255, 0.6);
+    --input-color: rgba(180, 180, 180, 0.4);
+    --button-search-color: rgba(180, 180, 180, 0.4);
+    --input-color-hover: rgba(124, 124, 124, 0.6);
+    --button-search-color-hover: rgba(124, 124, 124, 0.6);
+  }
+
+body {
+    background: url("./assets/bg/10n.png") no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body * {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+.main-box{
+    background: var(--main-box-color);
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+    transition: background 0.5s;
+}
+
+.main-box:hover{
+    background: var(--main-box-color-hover);
+}
+
+.input-city{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: var(--input-color);
+    width: calc(100% - 50px);
+    transition: background 0.5s;
+}
+
+.input-city:hover{
+    background-color: var(--input-color-hover);
+}
+
+.button-search{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--input-color);
+    cursor: pointer;
+    float: right;
+    transition: background 0.5s;
+}
+
+.button-search:hover{
+    background-color: var(--button-search-color-hover);
+}
+
+.img-search{
+    width: 20px;
+}
+
+.medium-box{
+    margin-top: 30px;
+}
+
+.city{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.temp{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.details-box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.txt-weather{
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.humidity{
+    margin-top: 20px;
+}

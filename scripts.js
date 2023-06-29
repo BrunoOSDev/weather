@@ -1,4 +1,4 @@
-const key = "d54de004a7e7f3f2f2a6a080d19cc53b";
+const key = ""; //The first API key was changed. Create your own API key for free at https://openweathermap.org/
 
 
 function toggleMode() {
